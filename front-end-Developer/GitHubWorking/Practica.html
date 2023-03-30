@@ -4,112 +4,222 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
     <title>Document</title>
     <style>
-        :root {
-            --white: #FFFFFF;
-            --black: #000000;
-            --very-light-pink: #C7C7C7;
-            --text-input-field: #F7F7F7;
-            --hospital-green: #ACD9B2;
-            --sm: 14px;
-            --md: 16px;
-            --lg: 18px;
-        }
-        body {
-            font-family: 'Quicksand', sans-serif;
-        }
-        .login {
-            width:100%;
-            height: 100vh;
-            display: grid;
-            place-items: center;
-        }
-        .form-container {
-          display: grid;
-          grid-template-rows: auto 1fr auto;
-          width: 300px;  
-        }
-        .logo{
-            width: 150px;
-            margin-bottom: 48px;
-            justify-self: center;
-            display: none;
-        }
-        .title {
-            font-size: var(--lg);
-            margin-bottom: 12px;
-            text-align: center;
-        }
-        .subtitle {
-            color: var(--very-light-pink);
-            font-size: var(--md);
-            font-weight: 300;
-            margin-top: 0;
-            margin-bottom: 32px;
-            text-align: center;
-        }
-        .form {
-            display: flex;
-            flex-direction: column;
-        }
-        .label {
-            font-size: var(--sm);
-            font-weight: bold;
-            margin-bottom: 4px;
-        }
-        .input {
-            background-color: var(--text-input-field);
-            border: none;
-            border-radius: 8px;
-            height: 30px;
-            font-size: var (--md);
-            padding: 6px;
-            margin-bottom: 12px;
-        }
-        .primary-button {
-            background-color: var(--hospital-green);
-            border: none;
-            border-radius: 8px;
-            color: var(--white);
+
+        nav {
+            background-color: blueviolet;
+            position: fixed;
             width: 100%;
-            cursor: pointer;
-            font-size: var(--md);
-            font-weight: bold;
             height: 50px;
         }
-        .login-button {
-            margin-top: 14px;
-            margin-bottom: 30px;
+
+        body {
+            background-color: blanchedalmond;
         }
-        @media (max-width: 640px) {
-            .logo {
-                display: block;
-            }
+
+        /* El perrito */
+        #el-perrito {
+            display: flex;
+            justify-content: center;
+        }
+
+        .card {
+            width: 385px;
+            height: 300px;
+            background-color: black;
+            border-radius: 10px;
+            display: flex;
+            
+        }
+
+        #perrito {
+            margin-left: 10px;
+            padding: 15px;
+            border-radius: 30px;
+        }
+
+        ul li {
+            width: 150px;
+            height: 65px;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        .text1 {
+            text-indent: 0.2em;
+            background-color: rgb(36, 250, 250);
+        }
+
+        .text2 {
+            text-indent: 0.2em;
+            background-color: rgb(100, 187, 237);
+        }
+
+        .text3 {
+            text-indent: 0.2em;
+            background-color: rgb(52, 193, 248);
+        }
+
+        #nombre {
+            font-weight: bold;
+        }
+
+
+        /*El gatito*/
+        #el-gato {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card-cat {
+            width: 385px;
+            height: 300px;
+            background-color: black;
+            border-radius: 10px;
+            display: flex;
+            margin-top: 5%;
+        }
+
+        #gatito {
+            padding: 15px;
+            border-radius: 30px;
+            object-fit: cover;
+            width: 288px;
+            height: 159px;
+            margin-top: 15%;
+            
+        }
+
+        /*El cocodrilito*/
+        #cocodrilo {
+            width: 295px;
+            height: 185px;
+            border-radius: 30px;
+            padding: 15px;
+            margin-top: 15%;
+            margin-right: -50%;
+        }
+
+        #card-cocodrilo {
+            width: 385px;
+            height: 300px;
+            background-color: black;
+            border-radius: 10px;
+            display: flex;
+            margin-top: 5%;
+            justify-content: right;
+            
+            
+        }
+
+        #list-cocodrilito {
+            position: relative;
+            left: -82%;
+        }
+
+        /*Botones*/
+        #botones {
+            width: 200px;
+            height: 200px;
+            background-color: gray;
+            margin-top: 5%;
+            justify-content: center;
+            border-radius: 40px;
+            display: flex;
+        }
+
+        .button{
+            height: 66px;
+            width: 66px;
+            border-radius: 50px;
+        }
+
+        #botones button:nth-child(1){
+            justify-content: left;
+            margin-top: 35%;
+            margin-left: 5px;
+        }
+        #botones button:hover{
+            background-color: rgb(65, 64, 64);
+        }
+
+        #botones button:nth-child(2){
+            justify-content: center;
+            margin-top: 5px;
+        }
+
+        #botones button:nth-child(3){
+            justify-content: right;
+            margin-top: 35%;
+            margin-right: 5px;
+        }
+
+        /*Sección de texto*/
+        #mi-seccion {
+            display: flex;
+            justify-content: center;
+        }
+
+        #mi-seccion p{
+            width: 250px;
+            height: 75px;
+            background-color: brown;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     </style>
 </head>
 <body>
-  <div class="login">
-    <div class="form-container">
-        <img src="./Imagenes/icons/curso-frontend-developer-practico-main/logos/logo_yard_sale.svg" alt="" class="logo">
 
-        <h1 class="title"> Crear nueva contraseña Ahora quiero que sea esto njda</h1>
-        <p class="subtitle">Enter a new password for your account</p>
+    <nav>Busqueda Binaria 2.0</nav>
 
-        <form action="/" class="form">
-            <label for="password" class="label">Password</label>
-            <input type="password" id="password" placeholder="*********" class="input input-password">
+    <h1>Cabecera</h1>
+
+    <section id="el-perrito">
+        <div class="card">
+            <img id="perrito" src="./img/pexels-denniz-futalan-2523934.jpg" alt="foto">
+                <ul>
+                    <li class="text1"><span id="nombre">Nombre:</span>Perrito</li>
+                    <li class="text2"><span id="nombre">Habilidad:</span>Amar</li>
+                    <li class="text3"><span id="nombre">Pasa tiempo:</span>correr</li>
+                </ul>
+        </div>
+    </section>
+
+    <section id="el-gato">
+        <div class="card-cat">
+            <img id="gatito" src="./img/pexels-pixabay-416160.jpg" alt="foto">
+                <ul id="kitty">
+                    <li class="text1"><span id="nombre">Nombre:</span>Gatito</li>
+                    <li class="text2"><span id="nombre">Habilidad:</span>Odiar</li>
+                    <li class="text3"><span id="nombre">Pasa tiempo:</span>Dormir</li>
+                </ul>
+        </div>
+
+        <div id="botones"> 
+            <button class="button">Gatito</button>
+            <button class="button">Perrito</button>
+            <button class="button">Cocodrilo</button>
+        </div>
+
+        <div id="card-cocodrilo">
+            <img id="cocodrilo" src="./img/pexels-ricardo-esquivel-1814344 (1).jpg" alt="foto">
+                <ul id="list-cocodrilito">
+                    <li class="text1"><span id="nombre">Nombre:</span>Cocodrito</li>
+                    <li class="text2"><span id="nombre">Habilidad:</span>Comer</li>
+                    <li class="text3"><span id="nombre">Pasa tiempo:</span>Jugar</li>
+                </ul>
+        </div>
+    </section>
         
-            <label for="new-password" class="label">Password</label>
-            <input type="password" id="new-password" placeholder="*********" class="input input-password">
-
-            <input type="submit" value ="confirm" class="primary-button login-button">
-        </form>
-    </div>
-  </div>
+    <section id="mi-seccion">
+        <p>Los animales son bonitos</p>
+    </section>
 </body>
 </html>
