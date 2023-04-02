@@ -175,6 +175,21 @@
             align-items: center;
             justify-content: center;
         }
+
+        @media (max-width: 800px) {
+            #todos-los-animalitos {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                
+            }
+            #el-perrito,
+            #el-gato,
+            #card-cocodrilo {
+                width: 200px;
+                height: 200px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -182,7 +197,7 @@
         <nav>Busqueda Binaria 2.0</nav>
     </section>
 
-    <section>
+    <section id="todos-los-animalitos">
 
         <section id="el-perrito">
             <div class="card">
