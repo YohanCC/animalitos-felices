@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300&family=Outfit:wght@100;300&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    :root{
+      /*Primary*/
+      --Light-red: hsl(0, 100%, 67%);
+      --Orangey-yellow: hsl(39, 100%, 56%);
+      --Green-teal: hsl(166, 100%, 37%);
+      --Cobalt-blue: hsl(234, 85%, 45%);
+
+      /*Gradients*/
+      --Light-slate-blue-background: hsl(252, 100%, 67%);
+      --Light-royal-blue-background: hsl(241, 81%, 54%);
+      --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+      --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+       /*Neutral*/
+      --White: hsl(0, 0%, 100%);
+      --Pale-blue: hsl(221, 100%, 96%);
+      --Light-lavender: hsl(241, 100%, 89%);
+      --Dark-gray-blue: hsl(224, 30%, 27%);
+    }
+    body {
+      font-family: 'Hanken Grotesk', sans-serif;
+      font-family: 'Outfit', sans-serif;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    } 
+    .first-div{
+      align-items: center;
+    }
+    div > div {
+      float: left;
+    }
+    div div:nth-child(1){
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: var(--Light-slate-blue-background);
+      width: 300px;
+      height: 375px;
+      border-radius: 24px;
+    }
+    div ul li{
+      width: 150px;
+      height: 50px;
+    }
+    li {
+      list-style-type: none;
+    }
+    h1{
+      text-align: center;
+    }
+    div div h1 + p{
+      text-align: center;
+      width: 95px;
+      height: 95px;
+      background-color: var(--Violet-blue-circle);
+      margin: 0 auto;
+      border-radius: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="first-div">
+    <div>
+      <h1>Your Result</h1>
+        <p> 
+          76 of 100
+        </p>
+      <h2>Great</h2>
+      <p>You scored higher than 65% of the people who have taken these tests</p>
+    </div>
+    <div>
+      <ul>
+        <li><img src="./assets/images/icon-reaction.svg">Reaction</li>
+        <li><img src="./assets/images/icon-reaction.svg">Memory</li>
+        <li>Verbal</li>
+        <li>Visual</li>
+      </ul>
+      <button>Continue</button>
+    </div>
+  </div>
+</body>
+</html>
